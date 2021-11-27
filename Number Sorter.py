@@ -4,103 +4,103 @@
 print("This is a program that sorts 4 numbers from highest to lowest")
 
 def userInput():
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
-    num3 = float(input("Enter the third number: "))
-    num4 = float(input("Enter the last number: "))
-    return num1, num2, num3, num4,
+    number1 = float(input("Enter the first number: "))
+    number2 = float(input("Enter the second number: "))
+    number3 = float(input("Enter the third number: "))
+    number4 = float(input("Enter the last number: "))
+    return number1, number2, number3, number4,
 
-a, b, c, d,= userInput()
+num1, num2, num3, num4,= userInput()
 
 # find the highest number
 def highestNumber():
-    if a > b and a > c and a > d:
-        return a
-    elif b > c and b > d:
-          return b
-    elif c > d:
-        return c
+    if num1 > num2 and num1 > num3 and num1 > num4:
+        return num1
+    elif num2 > num3 and num2 > num4:
+          return num2
+    elif num3 > num4:
+        return num3
     else:
-        return d
+        return num4
 
 highest = highestNumber()
 
 # find the second highest number
 def secondHighestNumber():
-    if a == highest:
-        if b > c and b > d:
-            return b
-        elif c > d:
-            return c
+    if num1 == highest:
+        if num2 > num3 and num2 > num4:
+            return num2
+        elif num3 > num4:
+            return num3
         else:
-            return d
-    if b == highest:
-        if a > c and a > d:
-            return a
-        elif c > d:
-            return c
+            return num4
+    if num2 == highest:
+        if num1 > num3 and num1 > num4:
+            return num1
+        elif num3 > num4:
+            return num3
         else:
-            return d
-    if c == highest:
-        if a > b and a > d:
-            return a
-        elif b > d:
-            return b
+            return num4
+    if num3 == highest:
+        if num1 > num2 and num1 > num4:
+            return num1
+        elif num2 > num4:
+            return num2
         else:
-            return d
-    if d == highest:
-        if a > b and a > c:
-            return a
-        elif b > c:
-            return b
+            return num4
+    if num4 == highest:
+        if num1 > num2 and num1 > num3:
+            return num1
+        elif num2 > num3:
+            return num2
         else:
-            return c
+            return num3
 
 second = secondHighestNumber()
     
 # find the lowest number
 def lowestNumber():
-    if a < b and a < c and a < d:
-        return a
-    elif b < c and b < d:
-          return b
-    elif c < d:
-        return c
+    if num1 < num2 and num1 < num3 and num1 < num4:
+        return num1
+    elif num2 < num3 and num2 < num4:
+          return num2
+    elif num3 < num4:
+        return num3
     else:
-        return d
+        return num4
 
 lowest = lowestNumber()
 
 # find the second lowest number
 def secondLowestNumber():
-    if a == lowest:
-        if b < c and b < d:
-            return b
-        elif c < d:
-            return c
+    if num1 == lowest:
+        if num2 < num3 and num2 < num4:
+            return num2
+        elif num3 < num4:
+            return num3
         else:
-            return d
-    if b == lowest:
-        if a < c and a < d:
-            return a
-        elif c < d:
-            return c
+            return num4
+    if num2 == lowest:
+        if num1 < num3 and num1 < num4:
+            return num1
+        elif num3 < num4:
+            return num3
         else:
-            return d
-    if c == lowest:
-        if a < b and a < d:
-            return a
-        elif b < d:
-            return b
+            return num4
+    if num3 == lowest:
+        if num1 < num2 and num1 < num4:
+            return num1
+        elif num2 < num4:
+            return num2
         else:
-            return d
-    if d == lowest:
-        if a < b and a < c:
-            return a
-        elif b < c:
-            return b
+            return num4
+    if num4 == lowest:
+        if num1 < num2 and num1 < num3:
+            return num1
+        elif num2 < num3:
+            return num2
         else:
-            return c
+            return num3
 
 third = secondLowestNumber()
 
